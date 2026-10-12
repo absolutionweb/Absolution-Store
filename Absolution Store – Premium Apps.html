@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Absolution Store – Premium Apps</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#f1f2f8;--card:#fff;--ink:#14172b;--muted:#585d7a;--brand:#4a3fd6;--brand-ink:#fff;--tape:#ffd23f;--line:#d6d8e8;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1220;--card:#181c33;--ink:#eceefb;--muted:#a3a9c8;--brand:#8b7dff;--brand-ink:#0f1220;--line:#2a3050}}
+:root[data-theme="dark"]{--bg:#0f1220;--card:#181c33;--ink:#eceefb;--muted:#a3a9c8;--brand:#8b7dff;--brand-ink:#0f1220;--line:#2a3050}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:"Special Elite","Courier New",monospace;font-size:20px}
+nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600;font-size:14px}
+nav a:hover{color:var(--brand)}
+:focus-visible{outline:3px solid var(--tape);outline-offset:2px}
+.tape{background:repeating-linear-gradient(-45deg,var(--tape) 0 14px,#14172b 14px 28px);height:10px}
+.hero{padding:44px 0 28px}
+.sym{font-size:22px;letter-spacing:.3em;color:var(--brand)}
+h1{font-family:"Special Elite","Courier New",monospace;font-weight:400;font-size:clamp(34px,8vw,60px);line-height:1.08;margin:10px 0 16px}
+.hero p{color:var(--muted);max-width:32em;margin:0 0 24px;font-size:17px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--brand);color:var(--brand-ink);padding:13px 22px;border-radius:10px;font-weight:700;text-decoration:none}
+.btn.alt{background:transparent;color:var(--brand);border:2px solid var(--brand);margin-left:8px}
+section{padding:28px 0}
+h2{font-family:"Special Elite","Courier New",monospace;font-weight:400;font-size:26px;margin:0 0 14px}
+.file{background:var(--card);border:2px dashed var(--line);border-radius:14px;padding:22px}
+.file p{margin:0 0 16px;color:var(--muted)}
+.contact{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;text-decoration:none;color:var(--ink);display:block}
+.box:hover{border-color:var(--brand)}
+.box b{display:block;margin-bottom:2px}
+.box span{color:var(--brand);font-weight:600;word-break:break-word}
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="tape" aria-hidden="true"></div>
+<header><div class="wrap"><span class="logo">Absolution Store</span>
+<nav><a href="#katalog">Katalog</a><a href="#kontak">Kontak</a></nav></div></header>
+
+<main class="wrap">
+<div class="hero">
+<div class="sym" aria-hidden="true">𓂃 𖦹</div>
+<h1>CASE FILE: PREMIUM APPS 🔎</h1>
+<p>Welcome, AbSolvers! Your next favorite app might be in this case file. Browse our collection of premium apps, pilih sesuai kebutuhanmu, and let us handle the rest.</p>
+<a class="btn" href="https://whatsapp.com/channel/0029VbDA7Mv9xVJnDoB5Mu2G" target="_blank" rel="noopener">Buka katalog</a><a class="btn alt" href="#kontak">Hubungi kami</a>
+</div>
+
+<section id="katalog">
+<h2>Katalog</h2>
+<div class="file">
+<p>Semua aplikasi premium dan update terbaru kami ada di channel WhatsApp. Ikuti channel untuk melihat daftar lengkap.</p>
+<a class="btn" href="https://whatsapp.com/channel/0029VbDA7Mv9xVJnDoB5Mu2G" target="_blank" rel="noopener">Lihat katalog di WhatsApp Channel</a>
+</div>
+</section>
+
+<section id="kontak">
+<h2>Kontak</h2>
+<div class="contact">
+<a class="box" href="https://wa.me/6285177269688" target="_blank" rel="noopener"><b>WhatsApp</b><span>+62 851-7726-9688</span></a>
+<a class="box" href="https://t.me/abbsolution" target="_blank" rel="noopener"><b>Telegram</b><span>@abbsolution</span></a>
+<a class="box" href="https://instagram.com/absolution.storee" target="_blank" rel="noopener"><b>Instagram</b><span>@absolution.storee</span></a>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> Absolution Store</div></footer>
+<script>document.getElementById("yr").textContent=new Date().getFullYear()</script>
+</body>
+</html>
